@@ -1,0 +1,54 @@
+# Add any directories, files, or patterns you don't want to be tracked by version control
+[Bb]in/
+[Oo]bj/
+[Cc]omponents/
+.nuget/
+log/
+logs/
+packages/
+artifacts/
+*DS_Store
+*.user
+*.suo
+/.vs
+*.jfm
+*.Web.config
+/UpgradeLog.htm
+*.htm
+
+*.swp
+*.*~
+project.lock.json
+.DS_Store
+*.pyc
+
+# Visual Studio Code
+.vscode
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+build/
+bld/
+[Bb]in/
+[Oo]bj/
+msbuild.log
+msbuild.err
+msbuild.wrn
+
+# Visual Studio 2015
+.vs/
+
+*.log
+
+*.yml
