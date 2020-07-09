@@ -15,7 +15,7 @@
     "function-timeout"     : 30,
     "function-handler"     : "NumberGame::NumberGame.Function::FunctionHandler",
     "function-name"        : "NumberGame",
-    "function-role"        : "arn:aws:iam::642372810646:role/lambda_exec_NumberGame",
+    "function-role"        : "***************",
     "tracing-mode"         : "PassThrough",
     "environment-variables" : ""
 }
