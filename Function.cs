@@ -54,10 +54,10 @@ namespace NumberGame
                         {
                             session.Attributes["num_guesses"] = 0;
                             Random rnd = new Random();
-                            Int32 magicNumber = rnd.Next(1, 2);
+                            Int32 magicNumber = rnd.Next(1, 5);
                             session.Attributes["magic_number"] = magicNumber;
 
-                            string next = "Guess a number betwen 1 and 10";
+                            string next = "Guess a number betwen 1 and 5";
                             Reprompt rp = new Reprompt(next);
                             tell = ResponseBuilder.Ask(next, rp, session);
                         }
