@@ -29,9 +29,9 @@ namespace NumberGame
                 session.Attributes = new Dictionary<string, object>();
 
             Type requestType = input.GetRequestType();
-            if (input.GetRequestType() == typeof(LaunchRequest))
+            if (requestType == typeof(LaunchRequest))
             {
-                string speech = "Welcome! Say new game to starat";
+                string speech = "Welcome! Say new game to start";
                 Reprompt rp = new Reprompt("Say new game to start");
 
                 tell = ResponseBuilder.Tell(speech, session);
@@ -57,7 +57,7 @@ namespace NumberGame
                             Int32 magicNumber = rnd.Next(1, 5);
                             session.Attributes["magic_number"] = magicNumber;
 
-                            string next = "Guess a number betwen 1 and 5";
+                            string next = "Guess a number between 1 and 5";
                             Reprompt rp = new Reprompt(next);
                             tell = ResponseBuilder.Ask(next, rp, session);
                         }
